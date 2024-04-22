@@ -14,11 +14,11 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
-
-    @GetMapping("/connectdb")
-    public void makeConnection() {
-        productService.makeConnection();
-    }
+//
+//    @GetMapping("/connectdb")
+//    public void makeConnection() {
+//        productService.makeConnection();
+//    }
 
     // 전체 상품 조회
     @GetMapping("/products")

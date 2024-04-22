@@ -1,9 +1,18 @@
 package com.example.demo.product;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Product {
+
+
+    @Id
+    private int id;
     private String name;
     private int price;
     private String description;
+
 
     public String getName() {
         return name;
@@ -27,5 +36,13 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
